@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/mon-repo/k8s-manifests.git  # Remplacez par votre repo
-    targetRevision: main  # Branche Git
-    path: app  # Dossier contenant les fichiers YAML
+    repoURL: https://github.com/ChouroukNasri/ArgoCD
+    targetRevision: main
+    path: app  # Assurez-vous que ce dossier contient les manifests Kubernetes
   destination:
     server: https://kubernetes.default.svc
     namespace: my-namespace
@@ -16,3 +16,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
+
